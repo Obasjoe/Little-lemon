@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Nav.css"
+import Hamburger from './Hamburger'
 
 export default function Nav() {
   return (
@@ -13,6 +14,9 @@ export default function Nav() {
                 <li>ORDER</li>
                 <li>LOGIN</li>
             </ul>
+            <div className='hamburger'>
+                <Hamburger/>
+            </div>
         </div>
     </div>
   )
