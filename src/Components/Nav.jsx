@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Nav.css"
 import Hamburger from './Hamburger'
 
 export default function Nav() {
+
+    const [hamburgerOpen, setHamburgerOpen] = useState(false);
+
+    const toggleHamburger = () =>{
+        setHamburgerOpen(!hamburgerOpen)
+    }
   return (
     <div>
         <div className='navigation'>
@@ -14,7 +20,7 @@ export default function Nav() {
                 <li>ORDER</li>
                 <li>LOGIN</li>
             </ul>
-            <div className='hamburger'>
+            <div className='hamburger' onClick={toggleHamburger}>
                 <Hamburger/>
             </div>
         </div>
