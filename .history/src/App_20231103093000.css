@@ -1,0 +1,34 @@
+
+
+.navbar {
+    padding: 10px 13%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+nav ul li a:hover{
+    text-decoration: underline solid #495E57;
+    
+  }
+
+nav ul li a{
+    color: #000;
+  }
+
+nav ul li {
+    display: inline-block;
+    padding: 1em;
+  }
+
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+  }
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+  }
