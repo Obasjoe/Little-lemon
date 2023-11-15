@@ -12,6 +12,12 @@ function App() {
   return (
     <>
       <Nav/>
+      <div 
+          style={{
+            overflowY: "scroll",
+            height: "800px",
+          }}
+        ></div>  
       <Main/>
       <Menu/>
       <Footer/>
